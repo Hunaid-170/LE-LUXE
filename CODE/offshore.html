@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE LUXURY LE LUXE - Premium Luxury Watches</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT CART -->
+    <div class="d-flex align-items-center">
+      <button id="cartBtn" class="btn btn-outline-light me-3">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+    </div>
+
+    <!-- LOGO CENTER -->
+    <a class="navbar-brand mx-auto fw-bold display-6" href="index.html">THE LUXURY</a>
+
+    <!-- TOGGLE RIGHT -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- COLLAPSIBLE MENU -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="product.html" id="productsDropdown" role="button" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+            <li><a class="dropdown-item" href="product.html">All Watches</a></li>
+            <li><a class="dropdown-item" href="royal.html">Royal Oak</a></li>
+            <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
+            <li><a class="dropdown-item" href="limited.html">Limited</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Product  -->
+<section class="products">
+  <div class="container-fluid">
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="watch1.png" class="img-fluid product-img">
+
+          <div class="product-body">
+            <p class="product-code">26398BC.OO.D002CR.02</p>
+
+            <h5 class="product-title">Code 11.59</h5>
+            <p class="product-sub">Ultra-Complication Universelle</p>
+
+            <p class="product-price">$145,000</p>
+
+            <button class="btn-lux add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="watch2.png" class="img-fluid product-img">
+
+          <div class="product-body">
+            <p class="product-code">26397BC.OO.D357CR.02</p>
+
+            <h5 class="product-title">Grande Sonnerie</h5>
+            <p class="product-sub">Supersonnerie</p>
+
+            <p class="product-price">$210,000</p>
+
+            <button class="btn-lux add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="watch3.png" class="img-fluid product-img">
+
+          <div class="product-body">
+            <p class="product-code">26395BC.OO.D321CR.01</p>
+
+            <h5 class="product-title">Royal Edition</h5>
+            <p class="product-sub">Limited Series</p>
+
+            <p class="product-price">$175,000</p>
+
+            <button class="btn-lux add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="lux-footer">
+  <div class="container">
+    <div class="footer-top">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <a href="index.html">LUXTIME</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="royal.html">Royal Oak</a></li>
+        <li><a href="offshore.html">Offshore</a></li>
+        <li><a href="limited.html">Limited</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 LUXTIME. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
