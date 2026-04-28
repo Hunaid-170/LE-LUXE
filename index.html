@@ -3,175 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE LUXURY LE LUXE - Premium Luxury Watches</title>
-  
+  <title>LE LUXE | Luxury Watches</title>
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom CSS -->
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg fixed-top luxury-navbar">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg luxury-navbar">
   <div class="container">
 
-    <!-- LEFT: CART -->
-    <button id="cartBtn" class="cart-btn">
-      <i class="fas fa-shopping-bag"></i>
-      <span class="cart-count">0</span>
-    </button>
-
-    <!-- CENTER LOGO -->
-    <a class="navbar-brand mx-auto luxury-logo" href="index.html">
-      THE LUXURY <span>LE LUXE</span>
+    <!-- Logo -->
+    <a class="navbar-brand luxury-logo" href="index.html">
+      LE LUXE
     </a>
 
-    <!-- TOGGLER -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <!-- Toggle -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- MENU -->
+    <!-- Menu -->
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+      <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Collections</a>
-          <ul class="dropdown-menu luxury-dropdown">
-            <li><a class="dropdown-item" href="product.html">All Watches</a></li>
-            <li><a class="dropdown-item" href="code11.59.html">Code 11.59</a></li>
-            <li><a class="dropdown-item" href="royal.html">Royal Oak</a></li>
-            <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
-            <li><a class="dropdown-item" href="limited.html">Limited</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Collections</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
       </ul>
     </div>
 
   </div>
 </nav>
 
+<!-- ================= HERO (AP STYLE LAYOUT) ================= -->
+<section class="hero">
 
-<!-- ===== HERO ===== -->
-<header class="hero">
-  <div class="hero-overlay"></div>
-
+  <!-- LEFT TEXT -->
   <div class="hero-content">
-    <h1 class="hero-title">Luxury Redefined</h1>
-    <p class="hero-subtitle">Timeless craftsmanship. Precision engineering.</p>
+    <h1 class="hero-title">
+      Precision.<br>
+      Craftsmanship.<br>
+      Legacy.
+    </h1>
 
-    <a href="product.html" class="lux-btn">
+    <p class="hero-subtitle">
+      Swiss-inspired luxury watches crafted for timeless elegance.
+    </p>
+
+    <a href="collections.html" class="view-btn">
+      <span class="line"></span>
       Explore Collection
     </a>
   </div>
-</header>
 
-<!-- ===== LUXURY FOOTER ===== -->
+  <!-- RIGHT WATCH IMAGE -->
+  <img src="assets/watch-hero.png" alt="Luxury Watch">
+
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="lux-footer">
+
   <div class="container">
 
-    <div class="row footer-top">
+    <div class="row">
 
-      <!-- Brand -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h2 class="footer-logo">THE LUXERY<br><span>LE LUXE</span></h2>
+      <!-- BRAND -->
+      <div class="col-md-4">
+        <h2>LE LUXE</h2>
         <p class="footer-text">
-          Timeless design. Uncompromised quality. The finest luxury watches crafted for those who value excellence.
+          Timeless craftsmanship. Precision engineering. Luxury redefined.
         </p>
-        <a href="#" class="lux-btn">Discover Collection</a>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6 mb-4">
+      <!-- LINKS -->
+      <div class="col-md-4">
         <h5>Quick Links</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="royal.html">Royal Oak</a></li>
-          <li><a href="offshore.html">Offshore</a></li>
-          <li><a href="code11.59.html">Code11.59</a></li>
-          <li><a href="limited.html">Limited</a></li>
+          <li><a href="product.html">Collections</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.htmlgit ">About Us</a></li>
         </ul>
       </div>
 
-      <!-- Customer Care -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h5>Customer Care</h5>
-        <ul>
-          <li><a href="#">Shipping & Delivery</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Warranty</a></li>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Track Order</a></li>
-        </ul>
-      </div>
+      <!-- CONTACT -->
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p class="footer-text">support@leluxe.com</p>
 
-      <!-- Newsletter -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h5>Newsletter</h5>
-        <p>Subscribe for exclusive offers & new arrivals.</p>
-
-        <div class="newsletter-box">
-          <input type="email" placeholder="Enter your email">
-          <button><i class="fas fa-paper-plane"></i></button>
-        </div>
-
-        <!-- Social -->
-        <div class="footer-social mt-3">
+        <div class="footer-social">
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
 
     </div>
 
-    <!-- Feature Strip -->
-    <div class="footer-features row text-center">
-      <div class="col-md-3">
-        <i class="fas fa-shield-alt"></i>
-        <p>Authentic Guarantee</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-truck"></i>
-        <p>Worldwide Delivery</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-headset"></i>
-        <p>Expert Support</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-gem"></i>
-        <p>Premium Quality</p>
-      </div>
-    </div>
-
-    <!-- Bottom -->
-    <div class="footer-bottom text-center">
-      <p>© 2026 THE LUXERY LE LUXE. All Rights Reserved.</p>
+    <div class="footer-bottom text-center mt-4">
+      <p>© 2026 LE LUXE. All Rights Reserved.</p>
     </div>
 
   </div>
+
 </footer>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
