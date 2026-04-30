@@ -2,140 +2,257 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <meta name="description" content="LE LUXE — Swiss-inspired luxury watches crafted for timeless elegance and precision engineering.">
+  <meta name="keywords" content="luxury watches, Swiss watches, premium watches, LE LUXE">
+  <meta name="author" content="LE LUXE">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LE LUXE | Luxury Watches</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>LE LUXE | Timeless Luxury Watches</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preload" as="image" href="assets/watch-hero.png">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg luxury-navbar">
-  <div class="container">
+<!-- Cursor Effect -->
+<div class="cursor-glow"></div>
 
-    <!-- Logo -->
-    <a class="navbar-brand luxury-logo" href="index.html">
-      LE LUXE
-    </a>
+<!-- HEADER / NAV -->
+<header class="header">
+  <nav class="nav">
 
-    <!-- Toggle -->
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="logo">LE LUXE</div>
 
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
+      <li class="dropdown">
+        <a href="product.html">Collections</a>
+        <div class="dropdown-box">
+          <a href="code11.59.html">Code 11.59</a>
+          <a href="royal.html">Royal Oak</a>
+          <a href="offshore.html">Offshore</a>
+          <a href="limited.html">Limited</a>
+        </div>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Collections</a>
-        </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
+    <!-- Mobile Menu Button (for later CSS/JS) -->
+    <div class="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+  </nav>
+</header>
 
-      </ul>
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <span class="tagline">Swiss Inspired Luxury</span>
+
+      <h1>
+        Precision.<br>
+        Craftsmanship.<br>
+        Legacy.
+      </h1>
+
+      <p>
+        Handcrafted luxury watches designed for those who value time, elegance, and perfection.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="product.html" class="btn primary">
+          Explore Collection
+        </a>
+
+        <a href="about.html" class="btn secondary">
+          Our Story
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="assets/watch-hero.png" alt="Luxury Watch Hero Image">
     </div>
 
   </div>
-</nav>
-
-<!-- ================= HERO (AP STYLE LAYOUT) ================= -->
-<section class="hero">
-
-  <!-- LEFT TEXT -->
-  <div class="hero-content">
-    <h1 class="hero-title">
-      Precision.<br>
-      Craftsmanship.<br>
-      Legacy.
-    </h1>
-
-    <p class="hero-subtitle">
-      Swiss-inspired luxury watches crafted for timeless elegance.
-    </p>
-
-    <a href="collections.html" class="view-btn">
-      <span class="line"></span>
-      Explore Collection
-    </a>
-  </div>
-
-  <!-- RIGHT WATCH IMAGE -->
-  <img src="assets/watch-hero.png" alt="Luxury Watch">
 
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="lux-footer">
+<!-- FEATURES -->
+<section class="features">
 
+  <div class="feature-box">
+    <h3>Swiss Precision</h3>
+    <p>Engineered with world-class mechanical accuracy.</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Luxury Design</h3>
+    <p>Minimal, modern, and timeless aesthetics.</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Limited Editions</h3>
+    <p>Exclusive pieces crafted for collectors.</p>
+  </div>
+
+</section>
+
+<!-- COLLECTION PREVIEW -->
+<section class="preview">
+
+  <div class="section-header">
+    <h2>Featured Collections</h2>
+    <p>Discover signature pieces from LE LUXE.</p>
+  </div>
+
+  <div class="preview-grid">
+
+    <div class="preview-card">
+      <img src="assets/royal-oak.jpg" alt="Royal Oak">
+      <h4>Royal Oak</h4>
+    </div>
+
+    <div class="preview-card">
+      <img src="assets/offshore.jpg" alt="Offshore">
+      <h4>Offshore</h4>
+    </div>
+
+    <div class="preview-card">
+      <img src="assets/limited.jpg" alt="Limited Edition">
+      <h4>Limited Edition</h4>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BRAND STORY -->
+<section class="story">
+
+  <div class="story-text">
+    <h2>Crafted for Legacy</h2>
+    <p>
+      Every LE LUXE timepiece is designed with a philosophy of precision and elegance,
+      blending tradition with modern innovation.
+    </p>
+  </div>
+
+</section>
+
+<!-- ===== LUXURY FOOTER ===== -->
+<footer class="lux-footer">
   <div class="container">
 
-    <div class="row">
+    <div class="row footer-top">
 
-      <!-- BRAND -->
-      <div class="col-md-4">
-        <h2>LE LUXE</h2>
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h2 class="footer-logo">THE LUXERY<br><span>LE LUXE</span></h2>
         <p class="footer-text">
-          Timeless craftsmanship. Precision engineering. Luxury redefined.
+          Timeless design. Uncompromised quality. The finest luxury watches crafted for those who value excellence.
         </p>
+        <a href="product.html" class="lux-btn">Discover Collection</a>
       </div>
 
-      <!-- LINKS -->
-      <div class="col-md-4">
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
         <h5>Quick Links</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Collections</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="royal.html">Royal Oak</a></li>
+          <li><a href="offshore.html">Offshore</a></li>
+          <li><a href="limited.html">Limited</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
         </ul>
       </div>
 
-      <!-- CONTACT -->
-      <div class="col-md-4">
-        <h5>Contact</h5>
-        <p class="footer-text">support@leluxe.com</p>
+      <!-- Customer Care -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Customer Care</h5>
+        <ul>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
 
-        <div class="footer-social">
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Newsletter</h5>
+        <p>Subscribe for exclusive offers & new arrivals.</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+
+        <br>
+
+        <!-- Social -->
+        <div class="footer-social mt-3">
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
 
     </div>
 
-    <div class="footer-bottom text-center mt-4">
-      <p>© 2026 LE LUXE. All Rights Reserved.</p>
+    <br>
+
+    <!-- Feature Strip -->
+    <div class="footer-features row text-center">
+      <div class="col-md-3">
+        <i class="fas fa-shield-alt"></i>
+        <p>Authentic Guarantee</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-truck"></i>
+        <p>Worldwide Delivery</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-headset"></i>
+        <p>Expert Support</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-gem"></i>
+        <p>Premium Quality</p>
+      </div>
+    </div>
+    
+    <br>
+
+    <!-- Bottom -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 THE LUXERY LE LUXE. All Rights Reserved.</p>
     </div>
 
   </div>
-
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>

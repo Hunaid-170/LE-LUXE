@@ -19,79 +19,131 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
-  <div class="container-fluid">
+<!-- Cursor Effect -->
+<div class="cursor-glow"></div>
 
-    <!-- LEFT CART -->
-    <div class="d-flex align-items-center">
-      <button id="cartBtn" class="btn btn-outline-light me-3">
-        <i class="fas fa-shopping-cart"></i>
-      </button>
+<!-- HEADER / NAV -->
+<header class="header">
+  <nav class="nav">
+
+    <div class="logo">LE LUXE</div>
+
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+
+      <li class="dropdown">
+        <a href="product.html">Collections</a>
+        <div class="dropdown-box">
+          <a href="code11.59.html">Code 11.59</a>
+          <a href="royal.html">Royal Oak</a>
+          <a href="offshore.html">Offshore</a>
+          <a href="limited.html">Limited</a>
+        </div>
+      </li>
+
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button (for later CSS/JS) -->
+    <div class="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- LOGO CENTER -->
-    <a class="navbar-brand mx-auto fw-bold display-6" href="index.html">THE LUXURY</a>
+  </nav>
+</header>
 
-    <!-- TOGGLE RIGHT -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- COLLAPSIBLE MENU -->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="CODE/product.html" id="productsDropdown" role="button" data-bs-toggle="dropdown">Products</a>
-          <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-            <li><a class="dropdown-item" href="product.html">All Watches</a></li>
-            <li><a class="dropdown-item" href="code11.59.html">Code 11.59</a></li>
-            <li><a class="dropdown-item" href="royal.html">Royal Oak</a></li>
-            <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
-            <li><a class="dropdown-item" href="limited.html">Limited</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-<!-- ===== FOOTER ===== -->
+<!-- ===== LUXURY FOOTER ===== -->
 <footer class="lux-footer">
   <div class="container">
-    <div class="footer-top">
-      <!-- Logo -->
-      <div class="footer-logo">
-        <a href="index.html">LUXTIME</a>
+
+    <div class="row footer-top">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h2 class="footer-logo">THE LUXERY<br><span>LE LUXE</span></h2>
+        <p class="footer-text">
+          Timeless design. Uncompromised quality. The finest luxury watches crafted for those who value excellence.
+        </p>
+        <a href="product.html" class="lux-btn">Discover Collection</a>
       </div>
 
-      <!-- Navigation Links -->
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="royal.html">Royal Oak</a></li>
-        <li><a href="offshore.html">Offshore</a></li>
-        <li><a href="limited.html">Limited</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="royal.html">Royal Oak</a></li>
+          <li><a href="offshore.html">Offshore</a></li>
+          <li><a href="limited.html">Limited</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
 
-      <!-- Social Media -->
-      <div class="footer-social">
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Customer Care -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Customer Care</h5>
+        <ul>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Newsletter</h5>
+        <p>Subscribe for exclusive offers & new arrivals.</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+
+
+        <!-- Social -->
+        <div class="footer-social mt-3">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Feature Strip -->
+    <div class="footer-features row text-center">
+      <div class="col-md-3">
+        <i class="fas fa-shield-alt"></i>
+        <p>Authentic Guarantee</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-truck"></i>
+        <p>Worldwide Delivery</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-headset"></i>
+        <p>Expert Support</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-gem"></i>
+        <p>Premium Quality</p>
       </div>
     </div>
+    
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>&copy; 2026 LUXTIME. All Rights Reserved.</p>
+    <!-- Bottom -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 THE LUXERY LE LUXE. All Rights Reserved.</p>
     </div>
+
   </div>
 </footer>
 

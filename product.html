@@ -3,166 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE LUXURY LE LUXE - Premium Luxury Watches</title>
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>LE LUXE - Luxury Watches</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preload" as="image" href="assets/watch-hero.png">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
-  <div class="container-fluid">
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav container">
 
-    <!-- LEFT CART -->
-    <div class="d-flex align-items-center">
-      <button id="cartBtn" class="btn btn-outline-light me-3">
-        <i class="fas fa-shopping-cart"></i>
-      </button>
+    <div class="logo">LE LUXE</div>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="product.html">Collections</a>
+        <div class="dropdown-box">
+          <a href="code11.59.html">Code 11.59</a>
+          <a href="royal.html">Royal Oak</a>
+          <a href="offshore.html">Offshore</a>
+          <a href="limited.html">Limited</a>
+        </div>
+      </li>
+
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+      <span></span><span></span><span></span>
     </div>
 
-    <!-- LOGO CENTER -->
-    <a class="navbar-brand mx-auto fw-bold display-6" href="index.html">THE LUXURY</a>
-
-    <!-- TOGGLE RIGHT -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- COLLAPSIBLE MENU -->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="CODE/product.html" id="productsDropdown" role="button" data-bs-toggle="dropdown">Products</a>
-          <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-            <li><a class="dropdown-item" href="product.html">All Watches</a></li>
-            <li><a class="dropdown-item" href="code11.59.html">Code 11.59</a></li>
-            <li><a class="dropdown-item" href="royal.html">Royal Oak</a></li>
-            <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
-            <li><a class="dropdown-item" href="limited.html">Limited</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
+  </nav>
+</header>
 
 
-<!-- SECTION 1 (RIGHT IMAGE) -->
-<section class="collection-hero right-img">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>CODE 11.59</h1>
-      <span>BY</span>
-      <h2>AUDEMARS PIGUET</h2>
-      <a href="code11.59.html" class="view-btn">
-        <span class="line"></span>
-        View Collection
-      </a>
-    </div>
-
-    <img src="IMAGES/code main.avif" class="hero-watch">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>DISCOVER TIMELESS LUXURY</h1>
+    <p>Crafted with precision. Designed for perfection.</p>
+    <a href="product.html" class="btn">Explore Collection</a>
   </div>
 </section>
 
-<!-- SECTION 2 (LEFT IMAGE) -->
-<section class="collection-hero left-img">
-  <div class="hero-overlay"></div>
 
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>ROYAL OAK</h1>
-      <a href="royal.html" class="view-btn">
-        <span class="line"></span>
-        View Collection
-      </a>
+<!-- COLLECTIONS -->
+<section id="collections" class="collections">
+
+  <!-- ITEM -->
+  <div class="collection">
+    <div class="text">
+      <span>Audemars Piguet</span>
+      <h2>CODE 11.59</h2>
+      <p>Modern architecture meets luxury craftsmanship.</p>
+      <a href="code11.59.html" class="btn-outline">View Collection</a>
+    </div>
+    <img src="IMAGES/code main.avif" alt="">
+  </div>
+
+  <!-- ITEM -->
+  <div class="collection reverse">
+    <img src="IMAGES/royal main.avif" alt="">
+    <div class="text">
+      <span>Iconic Design</span>
+      <h2>ROYAL OAK</h2>
+      <p>The most legendary luxury sports watch ever made.</p>
+      <a href="royal.html" class="btn-outline">View Collection</a>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="collection">
+    <div class="text">
+      <span>Performance</span>
+      <h2>OFFSHORE</h2>
+      <p>Bold design with extreme durability and power.</p>
+      <a href="offshore.html" class="btn-outline">View Collection</a>
+    </div>
+    <img src="IMAGES/off hsore main.avif" alt="">
+  </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Why Choose LE LUXE</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <i class="fas fa-gem"></i>
+      <h3>Luxury Craftsmanship</h3>
+      <p>Handcrafted with perfection.</p>
     </div>
 
-    <img src="IMAGES/royal main.avif" class="hero-watch">
+    <div class="feature">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Authentic Guarantee</h3>
+      <p>100% original luxury watches.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-truck"></i>
+      <h3>Worldwide Delivery</h3>
+      <p>Fast & secure shipping.</p>
+    </div>
+
   </div>
 </section>
 
-<!-- SECTION 3 (RIGHT IMAGE) -->
-<section class="collection-hero right-img">
-  <div class="hero-overlay"></div>
 
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>ROYAL OAK OFFSHORE</h1>
-      <a href="offshore.html" class="view-btn">
-        <span class="line"></span>
-        View Collection
-      </a>
-    </div>
 
-    <img src="IMAGES/off hsore main.avif" class="hero-watch">
-  </div>
-</section>
 
-<!-- SECTION 4 (LEFT IMAGE) -->
-<section class="collection-hero left-img">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>ROYAL OAK CONCEPT</h1>
-      <a href="limited.html" class="view-btn">
-        <span class="line"></span>
-        View Collection
-      </a>
-    </div>
-
-    <img src="IMAGES/concept main.avif" class="hero-watch">
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
+<!-- ===== LUXURY FOOTER ===== -->
 <footer class="lux-footer">
   <div class="container">
-    <div class="footer-top">
-      <!-- Logo -->
-      <div class="footer-logo">
-        <a href="index.html">LUXTIME</a>
+
+    <div class="row footer-top">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h2 class="footer-logo">THE LUXERY<br><span>LE LUXE</span></h2>
+        <p class="footer-text">
+          Timeless design. Uncompromised quality. The finest luxury watches crafted for those who value excellence.
+        </p>
+        <a href="product.html" class="lux-btn">Discover Collection</a>
       </div>
 
-      <!-- Navigation Links -->
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="royal.html">Royal Oak</a></li>
-        <li><a href="offshore.html">Offshore</a></li>
-        <li><a href="limited.html">Limited</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="royal.html">Royal Oak</a></li>
+          <li><a href="offshore.html">Offshore</a></li>
+          <li><a href="limited.html">Limited</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
 
-      <!-- Social Media -->
-      <div class="footer-social">
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Customer Care -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Customer Care</h5>
+        <ul>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Newsletter</h5>
+        <p>Subscribe for exclusive offers & new arrivals.</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+
+        <br>
+
+        <!-- Social -->
+        <div class="footer-social mt-3">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <!-- Feature Strip -->
+    <div class="footer-features row text-center">
+      <div class="col-md-3">
+        <i class="fas fa-shield-alt"></i>
+        <p>Authentic Guarantee</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-truck"></i>
+        <p>Worldwide Delivery</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-headset"></i>
+        <p>Expert Support</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-gem"></i>
+        <p>Premium Quality</p>
       </div>
     </div>
+    
+    <br>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>&copy; 2026 LUXTIME. All Rights Reserved.</p>
+    <!-- Bottom -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 THE LUXERY LE LUXE. All Rights Reserved.</p>
     </div>
+
   </div>
 </footer>
 
@@ -170,6 +226,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
 
 </body>
 </html>
